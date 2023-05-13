@@ -30,7 +30,7 @@
         .header nav
         {
             /* height: 80px; */
-            background: violet;
+            /* background: violet; */
             border: 2px solid;
             padding: 20px 00px 20px 0;
             text-align: right;
@@ -111,7 +111,7 @@
         }
         .portfoliosection
         {
-            height: 400px;
+            /* height: 400px; */
             background: black;
             
 
@@ -140,14 +140,15 @@
         {
             border: 1px solid yellowgreen;
             background: slateblue;
-            padding: 20px;
+            /* padding: 20px; */
         }
 
         @media(max-width: 500px)
         {
             .portfoliosection{width: 100%;}
-            .portfoliosection .scr{width: 100%;} */
-            .portfoliosection .scr .screen{width: 100%;} */
+            /* .portfoliosection .scr{width: 100%;} */
+            .portfoliosection .scr{grid-template-columns: 1fr;}
+            /* .portfoliosection .scr .screen{width: 100%;} */
             
         }
 
@@ -242,12 +243,12 @@
     <div class="header">
         <!-- <img src="images/pexels-daniel-putzer-633409.jpg" alt="" height="100%" width="100%"> -->
         <nav>
-            <!-- <div class="logo">dfcn</div> -->
+            <!-- <div class="logo"><img src="images/abstract-removebg-preview.png" alt="" height="100%" width=""></div> -->
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">portfolio</a></li>
-                <li><a href="">contect</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutsectiontag">About</a></li>
+                <li><a href="#aboutsectiontag">portfolio</a></li>
+                <li><a href="#contectsectiontag">contect</a></li>
             </ul>
         </nav>
         <div class="text">
@@ -261,7 +262,7 @@
 
     <!-- about start -->
     
-    <div class="aboutsection">
+    <div class="aboutsection" id="aboutsectiontag">
 
     </div>
 
@@ -269,21 +270,27 @@
 
     <!-- portfolio -->
 
-    <div class="portfoliosection">
+    <div class="portfoliosection" id="portfoliosectiontag">
 
         <h1>Portfolio</h1>
 
         <div class="scr">
-            <div class="screen"></div>
-            <div class="screen"></div>
+            <div class="screen">
+                <a href="#Untitled-2.html"><img src="images/flexscreen.PNG" alt="" height="100%" width="100%"></a>
+            </div>
+
+            <div class="screen">
+                <a href="#"><img src="images/grid.screen.PNG" alt="" height="100%" width="100%"></a>
+            </div>
         </div>
+
     </div>
 
     <!-- end -->
 
     <!-- contect start-->
     
-    <div class="contectsection">
+    <div class="contectsection" id="contectsectiontag">
         <h1>Contect me</h1>
 
         <div class="cel">
@@ -297,7 +304,7 @@
                 
                 <div class="circle"> <i class="fa fa-envelope-o"></i>
                 </div>
-                <div class="cel-col-text"><a href="">dipesh0089@gmail.com</a></div>
+                <div class="cel-col-text"><a href="https://www.gmail.com">dipesh0089@gmail.com</a></div>
                 
             </div>
 
